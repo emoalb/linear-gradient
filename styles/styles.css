@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(to right, #ffe000, #799f0c);
+}
+.box {
+    border: solid 1px #000;
+    padding-top: 20%;
+    padding-left: 20%;
+    border-radius: 2rem;
+    background: linear-gradient(to right, #799f0c, #acbb78);
+    animation: transform 10s linear  infinite normal;
+}
+
+@keyframes transform {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
