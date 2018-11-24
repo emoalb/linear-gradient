@@ -6,7 +6,7 @@ body {
     justify-content: center;
     height: 100vh;
     align-items: center;
-    background: linear-gradient(to right, #ffe000, #799f0c);
+    background: linear-gradient(to right, #314755, #26a0da);
 }
 .box {
     border: solid 1px #000;
@@ -16,7 +16,16 @@ body {
     background: linear-gradient(to right, #799f0c, #acbb78);
     animation: transform 10s linear  infinite normal;
 }
-
+@media only screen and (max-width: 800px)  {
+    .box{
+        border-radius: 6px;
+    }
+}
+@media only screen and (max-width: 400px)  {
+    .box{
+        border-radius: 2px;
+    }
+}
 @keyframes transform {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
